@@ -16,5 +16,19 @@ namespace Kütüphane_oto
         {
             InitializeComponent();
         }
+
+        private void GirisButton_Click(object sender, EventArgs e)
+        {
+            var Gelenad = AdGiristxt.Text;
+            var GelenSifre = sifreGiristxt.Text;
+            if (Gelenad==("Admin")&& GelenSifre==("123"))
+            {
+                MessageBox.Show("Başarılı");
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı veya Şifre Hatalı");
+            }
+        }
     }
 }
